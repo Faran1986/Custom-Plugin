@@ -1,0 +1,153 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+ body {
+        
+    background:#f5f5f5;
+}
+
+
+.mbsc-ios.mbsc-page{
+  max-width: 100%;
+padding: 10px;
+background: #fff !important;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+
+.aw-views-wrap {
+background: #fff;
+padding: 10px;
+border-radius: 10px;
+border: 1px solid #ddd;
+width: fit-content;
+margin: 20px auto;
+}
+.aw-views-wrap ul{margin:0;padding:0}
+.aw-views-wrap li {
+list-style: none;
+display: inline-block;
+padding: 10px 15px;
+margin: 0 5px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 18px;
+color: #000;
+}
+.aw-active{
+background: #028fcc;
+color: #fff !important;
+box-shadow: 0 3px 10px #ddd;
+}
+.mbsc-ios.mbsc-calendar-width-md .mbsc-calendar-day-labels .mbsc-calendar-day-inner,
+.mbsc-ios.mbsc-calendar-width-md .mbsc-calendar-day-inner{background:#fff}
+.mbsc-ios.mbsc-schedule-event{height:30px !important}
+
+
+.aw-event-details {
+  position: fixed;
+  top: 0;
+  right: -600px;
+  background: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  width: 500px;
+  z-index: 9999;
+  box-shadow: 0 5px 10px #ddd;
+  height: 100vh;
+  overflow-y: scroll;
+  transition:all 1s;
+  }
+/* width */
+.aw-event-details::-webkit-scrollbar {
+width: 5px;
+}
+
+/* Track */
+.aw-event-details::-webkit-scrollbar-track {
+background: transparent;
+border-radius:5px
+}
+
+/* Handle */
+.aw-event-details::-webkit-scrollbar-thumb {
+background: #fff;
+border-radius:5px
+}
+
+/* Handle on hover */
+.aw-event-details::-webkit-scrollbar-thumb:hover{
+background: #ddd;
+}	
+.event-content>h2{
+font-size: 28px;
+font-weight: 500;
+color: #000;
+}
+.event-content>p>span {
+background: #f1f1f1;
+padding: 3px 5px;
+border: 1px solid #ddd;
+border-radius: 3px;
+font-weight: 500;
+}
+.aw-event-details>i{
+background: #028fcc;
+color: #fff;
+padding: 5px;
+border-radius: 3px;
+font-size: 20px;
+margin-bottom: 15px;
+cursor: pointer;
+}
+
+.aw-filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 30px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.aw-filters label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 35px;
+}.aw-input {
+  height: 50px;
+  width: 300px;
+  outline:none;
+}
+button#searchBtn {
+  height: 52px;
+  width: 52px;
+  padding: 0;
+  margin-left: -5px;
+  border-radius: 0 2px 2px 0;
+  background: #028fcc;
+  cursor: pointer;
+}
+div#awLoader {
+  background: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  border-radius: 10px;
+  padding: 10px;
+  display:none;
+}
+div#awLoader>img{height: 60px;}
+
+@media screen and (max-width: 480px) { 
+
+  .aw-event-details{width: 100%;max-width: 100%;}
+
+}

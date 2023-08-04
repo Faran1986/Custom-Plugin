@@ -1,0 +1,77 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+ .form-wrap {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 20px 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-wrap h3{margin-top:0px}
+.form-wrap label{    font-weight: 500;}
+.form-wrap label span{color:red;}
+input#icsFile {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+}
+button#importIcs {
+    width: 200px;
+    height: 40px;
+    background: #028fcc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #ddd;
+    cursor:pointer;
+}
+
+.aw-table-responsive table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.aw-table-responsive table th, .aw-table-responsive table td{border:1px solid #ddd;padding:10px}
+
+.aw-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    width: fit-content;
+}
+.bg-sucess{background: #32c318;}
+.bg-danger{background: #c31818;}
+
+
+.aw-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display:none
+}
+.aw-model {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align:center;
+}
+.aw-model>h2{color:#fff;font-size:24px}
+.aw-model>img{height:80px}
